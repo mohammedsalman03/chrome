@@ -1,7 +1,8 @@
 html, body{
     background-color: darkgreen;
     color: aliceblue;
-
+    height: 489px;
+    width: 500px;
 }
 h1{
   text-align: center;  
