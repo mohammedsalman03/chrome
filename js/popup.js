@@ -12,10 +12,12 @@ async function fetchData() {
 
     console.log('record', record)
     let date= new Date();
-    const indices = [0, 1, 4, 49, 50];
+    const indices = [0, 1, 2, 93, 94];
 const filteredStages = record.Stages.filter((stage, index) => indices.includes(index));
-document.getElementById("fixtures").innerHTML = filteredStages.map(item => `                 
-    <li>${item.Cnm} | ${item.Snm} | ${item.Events[0].T1[0].Nm} Vs ${item.Events[0].T2[0].Nm} | ${date.getDate(item.Events[0].Esd)}/${(date.getMonth(item.Events[0].Esd)+1).toString().padStart(2, '0')}/${date.getFullYear(item.Events[0].Esd)} ${date.getHours(item.Events[0].Esd).toString().padStart(2, '0')}:${date.getMinutes(item.Events[0].Esd).toString().padStart(2, '0')}</li>`);
+document.getElementById("fixtures").innerHTML = filteredStages.map(item => 
+    
+`<li>${item.Cnm} | ${item.Snm} | ${item.Events[0].T1[0].Nm} 🆚 ${item.Events[0].T2[0].Nm} |📆 ${date.getDate(item.Events[0].Esd)}/${(date.getMonth(item.Events[0].Esd)+1).toString().padStart(2, '0')}/${date.getFullYear(item.Events[0].Esd)} | ${String(item.Events[0].Esd).slice(8,10)}:${String(item.Events[0].Esd).slice(10,12)} PM</li>`
+).join(' ');
 
 
 }
