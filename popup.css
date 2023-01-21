@@ -1,8 +1,8 @@
 html, body{
     background-color: darkgreen;
     color: aliceblue;
-    height: 489px;
-    width: 500px;
+    height: 600px;
+    min-width: 800px;;
 }
 h1{
   text-align: center;  
@@ -21,8 +21,8 @@ h2{
 }
 
 img{
-    position: relative;
-    left: -120px;
+    position: fixed;
+    left: 650px;
 
 }
 
