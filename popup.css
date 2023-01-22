@@ -29,7 +29,7 @@ h2{
 }
 img{
     position: fixed;
-    left: 650px;
+    left: 350px;
 
 }
 
@@ -52,7 +52,7 @@ li{
 
 .link{
     font-size: 16px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 a{
@@ -60,4 +60,18 @@ a{
     text-decoration: none;
 }
 
+table{
+    display: table;
+    margin: 0 auto;
+}
+
+th{
+    padding: 10px;
+    
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
 

@@ -19,14 +19,24 @@
 
 <div class="list">
     
-    <ul class="a">
-        <li id="fixtures"></li>
-    </ul>
+    <table style="width: 100%">
+    <thead>
+        <tr>
+            <th>Country</th>
+            <th>League</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th><i class="material-icons" style="font-size:18px">today</i> Date</th>
+            <th><i class="material-icons" style="font-size:18px">access_alarm</i> Time(in IST)</th>
+           </tr>
+    </thead>
+    
+        <tbody id="fixtures"></tbody>
+</table>
 </div>
-<br>
-<p class="text"><i>*The time displayed here is 30 minutes slower than actual match time.</i></p>
 </div>
 <script src="./js/popup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 </body>
 </html>
 
