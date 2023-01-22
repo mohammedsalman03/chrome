@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'a425bb3a1emshacddd96f1956a77p1d5f37jsnc2a11ed8f617',
+		'X-RapidAPI-Key': 'f7f6de6c40msh93395fb7cff6551p11088bjsn0d468eed420b',
 		'X-RapidAPI-Host': 'livescore6.p.rapidapi.com'
 	}
 };
@@ -14,7 +14,8 @@ fetch('https://livescore6.p.rapidapi.com/matches/v2/list-by-date?Category=soccer
 
                 console.log(data);
                 let temp = "";
-                const indices = [0, 1, 2, 3, 81];
+                const indices=[0,1,3,84,85]
+                
                 const filteredStages = data.Stages.filter((stage, index) => indices.includes(index));
                 if(data){
                     document.getElementById("fixtures").innerHTML = filteredStages.map((x) => {
