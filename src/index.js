@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     
                     console.log(data);
                     let temp = "";
-                    const indices=[0,1,3,84,85]
+                    const indices=[0,1,2,34]
                     
                     const filteredStages = data.Stages.filter((stage, index) => indices.includes(index));
                     if(data){
